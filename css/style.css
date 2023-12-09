@@ -1,0 +1,35 @@
+.switch {
+  width: 200px;
+}
+
+.switch__toggle {
+  width: 70px;
+  height: 70px;
+  background: url(https://i.postimg.cc/yJhfdn3w/Switch.png) center center no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.switch__label {
+  background: url(https://i.postimg.cc/Lg5vxpQp/switch-body.png) center center no-repeat;
+  background-size: contain;
+
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.switch__input {
+  display: none;
+}
+
+.switch__input:checked + .switch__label {
+  text-align: right;
+  background-image: url(https://i.postimg.cc/34nnjRB1/switch-body-light.png);
+}
+
+.switch__input:checked + .switch__label .switch__toggle {
+  background-image: url(https://i.postimg.cc/KkZ0gLn4/Switch-light.png);
+}
